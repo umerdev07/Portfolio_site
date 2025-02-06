@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    justify-content: space-evenly;
+    list-style: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.nav_container .nav_links {
+    display: flex;
+    padding: 0;
+    margin-left: 300px;
+    gap: 40px;
+}
+
+.nav_container .nav_links li {
+    justify-content: space-between;
+}
+
+p a {
+    font-weight: 300;
+    transform: translateX(100%);
+    font-size: 30px;
+    text-decoration: none;
+    color: #202020;
+    cursor: pointer;
+
+}
+
+
+
+.nav_container .nav_links li a {
+    text-decoration: none;
+    font-size: large;
+    color: rgb(68, 68, 66);
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+
+.nav_container .nav_links li a:hover {
+    color: rgb(187, 187, 184);
+    border: none;
+    border-bottom: 2px solid rgb(219, 219, 218);
+    ;
+    border-radius: 0px;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 100%;
+    min-width: 600px;
+    justify-content: center;
+
+}
+
+.about {
+    text-align: center;
+    margin-top: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease-out forwards;
+}
+.about h4{
+    font-size: 14px;    
+}
+@keyframes fadeIn {
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+
+.profile-image img {
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease-out forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+.about-content {
+    margin-left: 30px;
+    transform: translateX(100%); 
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* Move to original position */
+    }
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.info {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+
+.iconpic {
+    width: 30px;
+    height: 30px;
+    margin-left: 40%
+}
+
+h3 {
+    margin-left: 2 0%;
+    text-align: center;
+}
+
+.about-content .description {
+    color: gray;
+    line-height: 1.6;
+    margin-left: 20px;
+    max-width: 500px;
+    text-align: left;
+}
+
+p {
+    text-align: center;
+}
+
+.experience,
+.education {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 30px;
+    width: 50%;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+    color: rgb(65, 63, 63);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
