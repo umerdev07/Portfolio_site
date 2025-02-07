@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/mediaquries.css">
+    
 </head>
 
 <body>
 
     <div class="mainBody">
-        <div class="nav_container">
+        <div class="nav_container" id="nav">
             <p><a href="index.html">UmerDev</a></p>
             <div class="nav_links">
 
@@ -30,18 +32,43 @@
 
             </div> <!--nav-links-->
         </div> <!--nav-container-->
+        <div id="hamburger">
+            <p><a href="index.html" class="logo">UmerDev</a></p>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <span class="close-btn" onclick="toggleMenu()">×</span>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="experince.html" onclick="toggleMenu()">Experience</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="project">Projects ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="andriod.html" onclick="toggleMenu()">Android</a></li>
+                            <li><a href="IOS.html" onclick="toggleMenu()">iOS</a></li>
+                            <li><a href="flutter.html" onclick="toggleMenu()">Flutter</a></li>
+                            <li><a href="react.html" onclick="toggleMenu()">React Native</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div class="about">
             <h4>Get To Know More</h4>
             <h1>About Me</h1>
         </div>
         <div class="about-container">
-            
+
             <div class="profile-image">
                 <img src="assets/profile.jpg" alt="Profile Image">
             </div>
             <div class="about-content">
-              
+
                 <div class="info">
                     <div class="experience">
                         <img src="assets/expereince.png" alt="" class="iconpic">
@@ -55,17 +82,18 @@
                     </div>
                 </div>
                 <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem, 
-                    dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus sint 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem,
+                    dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus sint
                     delectus velit in eos quo officiis explicabo deleniti dignissimos. Eligendi illum libero dolor.
                 </p>
             </div>
-           
+
         </div>
         <footer class="footer">
             <p>Copyright &copy; 2025 UmerDev. All rights reserved.</p>
         </footer>
 
 </body>
+<script src="script.js"></script>
 
 </html>
