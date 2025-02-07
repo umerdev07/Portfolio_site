@@ -190,8 +190,11 @@ p a{
 }
 
 .button-group button:first-child {
-    background: #ddd;
+    background: white !important;
+    color: #000 !important;
+    border: 1px solid #ddd;
 }
+
 
 .button-group button:last-child {
     background: #000;
