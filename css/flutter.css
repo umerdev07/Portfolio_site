@@ -51,52 +51,32 @@ p a {
     color: rgb(187, 187, 184);
     border: none;
     border-bottom: 2px solid rgb(219, 219, 218);
-
+    ;
     border-radius: 0px;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 100%;
+    min-width: 600px;
+    justify-content: center;
+
 }
 
 .about {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 18px;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 2s ease-out forwards;
 }
-
-.about h4 {
-    font-size: 14px;
-    color: gray;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 2;
-        transform: translateY(0);
-    }
-}
-
-.container-wrapper {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-
-}
-
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 2s ease-out forwards;
+.about h4{
+    font-size: 14px;    
 }
 @keyframes fadeIn {
     to {
@@ -159,49 +139,11 @@ p a {
     justify-content: space-evenly;
 }
 
-.container h2 {
-    margin-bottom: 15px;
-}
 
-.skills {
-    display: grid;
-    margin: 5px;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.skill {
+h1{
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    text-align: left;
-}
-
-.skill img {
-    width: 18px;
-    height: 18px;
-    margin-left: 10px;
-}
-
-.level {
-    font-size: 12px;
-    float: left;
-    color: gray;
-}
-
-.footer {
     text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-    color: rgb(65, 63, 63);
-    opacity: 0; 
-    transform: translateY(20px); 
-    animation: fadeIn 1s ease-out forwards;
-}
-@keyframes fadeIn {
-    to {
-        opacity: 2;
-        transform: translateY(0);
-    }
+    margin-top: 15%;
 }
