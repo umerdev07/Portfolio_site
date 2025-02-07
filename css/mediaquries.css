@@ -1,8 +1,5 @@
 @media (max-width: 750px) {
-    *{
-        overflow-x: hidden;
-    }
-    .nav_container {
+    /* .nav_container {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
@@ -12,20 +9,21 @@
         flex-direction: column;
         margin-left: 0;
         gap: 20px;
-    }
+    } */
     .logo{
         margin-left: 20px;
     }
     .hamburger-menu {
         display: block;
         margin-left: auto;
-        margin-right: 10px;
+        margin-right: 30px;
 
     }
 
     .menu-links {
         width: 100%;
         text-align: center;
+        
     }
 
     .profile-container {
