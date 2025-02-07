@@ -189,15 +189,16 @@ p a{
     transition: 0.3s ease;
 }
 
-.button-group button:first-child {
-    background: white !important;
-    color: #000 !important;
+
+.button-group a:first-of-type button {
+    background: white;
+    color: #000;
     border: 1px solid #ddd;
 }
 
 
-.button-group button:last-child {
-    background: #000;
+.button-group a:last-of-type button {
+    background: black;
     color: white;
 }
 
