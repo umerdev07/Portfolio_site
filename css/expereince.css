@@ -75,35 +75,7 @@ p a {
     }
 }
 
-.container-wrapper {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
 
-}
-
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 2s ease-out forwards;
-}
-@keyframes fadeIn {
-    to {
-        opacity: 2;
-        transform: translateY(0);
-    }
-}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -161,6 +133,36 @@ p a {
 
 .container h2 {
     margin-bottom: 15px;
+}
+
+.container-wrapper {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease-out forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
 }
 
 .skills {

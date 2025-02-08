@@ -212,48 +212,6 @@ p a{
     }
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .nav_container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav_container .nav_links {
-        margin-left: 0;
-        gap: 15px;
-    }
-    .contact-content {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav_container {
-        padding: 10px;
-    }
-    .nav_container .nav_links {
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-container {
-        flex-direction: column;
-    }
-    .contact-content {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav_container .nav_links li a {
-        font-size: medium;
-    }
-    .contact-content {
-        padding: 10px;
-        gap: 10px;
-    }
-}
-
 #hamburger {
     display: none;
     

@@ -90,6 +90,7 @@
  /*About me Responsive Design for 750px screens */
  @media screen and (max-width: 750px) {
 
+
      html,
      body {
          overflow-y: auto;
@@ -154,7 +155,51 @@
      }
  }
 
+/*Expereince page*/
 
+@media screen and (max-width: 750px) {
+    .container-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px
+    }
+    .container {
+        width: 90%;
+        padding: 15px;
+       
+    }
+    .skills {
+        grid-template-columns: 2fr 2fr;
+        gap: 8px;
+    }
+    .skill {
+        gap: 10px;
+    }
+    .skill img {
+        width: 14px;
+        height: 14px;
+    }
+    .level {
+        font-size: 9px;
+    }
+    .footer {
+        margin-top: 20px;
+    }
+}
+
+/*Contact us*/
+
+@media screen and (max-width: 750px) {
+    .contact-container {
+        flex-direction: column;
+        
+    }
+    .contact-content {
+        padding: 15px;
+        margin: 0 20px; 
+        flex-direction: column;
+    }
+}
 
 
  @media screen and (max-width: 1200px) {
