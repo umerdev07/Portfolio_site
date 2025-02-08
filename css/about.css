@@ -182,10 +182,10 @@ p a{
     transition: background-color 0.1s ease, color 0.3s ease;
 }
 
-.dropdown-content a:hover {
-    background-color: #111111;
-    color: white;
-}
+    .dropdown-content a:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
 
 .dropbtn {
     color: white;
@@ -288,6 +288,7 @@ p {
 .experience,
 .education {
     border: 1px solid var(--card-border);
+    box-shadow: 0 0 6px var(--secondary-color);
     padding: 20px;
     border-radius: 30px;
     width: 50%;
