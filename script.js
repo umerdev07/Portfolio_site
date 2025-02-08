@@ -61,3 +61,13 @@ for (let i = 0; i < icons.length; i++) {
 }
 
 
+const track = document.querySelector(".slide-track");
+let index = 0;
+
+function slideNext() {
+  index++;
+  if (index >= 4) index = 0;
+  track.style.transform = `translateX(-${index * 300}px)`;
+}
+
+setInterval(slideNext, 2000);
