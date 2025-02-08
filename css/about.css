@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -6,40 +6,93 @@
     box-sizing: border-box;
 }
 
-.nav_container {
+.nav_container{
     display: flex;
     align-items: center;
-    height: 86px;
     justify-content: space-evenly;
     list-style: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
 }
 
-.nav_container .nav_links {
+.nav_container .nav_links{
     display: flex;
     padding: 0;
     margin-left: 300px;
     gap: 40px;
 }
 
-.nav_container .nav_links li {
+.nav_container .nav_links li{
     justify-content: space-between;
 }
 
-p a {
+p a{
     font-weight: 300;
-    transform: translateX(100%);
+    transform: translateX(100%); 
     font-size: 30px;
     text-decoration: none;
     color: #202020;
+    opacity: 0; 
     cursor: pointer;
-
+    transform: translateY(20px); 
+    animation: fadeIn 2s ease-out forwards;
 }
 
+@keyframes fadeIn {
+    to {
+        opacity: 2;       
+        transform: translateY(0); 
+    }
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px; 
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
-.nav_container .nav_links li a {
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.1s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #111111 !important;
+    color: white;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    background-color: #333;
+    border-radius: 8px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.dropbtn:hover {
+    background-color: #444;
+}
+
+.dropdown .project {
     text-decoration: none;
     font-size: large;
     color: rgb(68, 68, 66);
@@ -47,14 +100,21 @@ p a {
     justify-content: space-evenly;
 }
 
-.nav_container .nav_links li a:hover {
-    color: rgb(187, 187, 184);
-    border: none;
-    border-bottom: 2px solid rgb(219, 219, 218);
-    ;
-    border-radius: 0px;
+
+.nav_container .nav_links li a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(68, 68, 66);
+    font-weight: 600;
+    justify-content: space-evenly;
 }
 
+.nav_container .nav_links li a:hover{
+    color: rgb(187, 187, 184);
+    border: none;
+    border-bottom: 2px solid rgb(219, 219, 218);;
+    border-radius: 0px;
+}
 
 .about-container {
     display: flex;
@@ -261,17 +321,7 @@ p {
     background-color: black;
     transition: all 0.3s ease-in-out;
 }
-/* display: none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    min-width: 150px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 8px; 
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease; */
+
 .menu-links {
     position: absolute;
     top: 100%;

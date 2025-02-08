@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/andriodproject.css">
+    <link rel="stylesheet" href="css/mediaquries.css">
 </head>
 
 <body>
 
     <div class="mainBody">
-        <div class="nav_container">
+        <div class="nav_container" id="nav">
             <p><a href="index.html">UmerDev</a></p>
             <div class="nav_links">
 
@@ -30,6 +31,32 @@
 
             </div> <!--nav-links-->
         </div> <!--nav-container-->
+        <div id="hamburger">
+            <p><a href="index.html" class="logo">UmerDev</a></p>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <span class="close-btn" onclick="toggleMenu()">×</span>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="experince.html" onclick="toggleMenu()">Experience</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="project">Projects ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="andriod.html" onclick="toggleMenu()">Android</a></li>
+                            <li><a href="IOS.html" onclick="toggleMenu()">iOS</a></li>
+                            <li><a href="flutter.html" onclick="toggleMenu()">Flutter</a></li>
+                            <li><a href="react.html" onclick="toggleMenu()">React Native</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="about">
             <h4>Browse My Recent</h4>
             <h1>Projects</h1>
