@@ -215,6 +215,7 @@ p a{
     border-radius: 20px;
     object-fit: cover;
     border: 2px solid var(--image-border);
+    box-shadow: 0 0 6px var(--secondary-color);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 2s ease-out forwards;
