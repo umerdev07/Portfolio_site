@@ -391,7 +391,7 @@ p a{
     position: static;
     display: none;
     width: 100%;
-    background-color: white;
+    background-color: var(--hamburgerDropProjectMenu);
 }
 
 /* Open the dropdown inside the menu when clicking the "Projects" link */

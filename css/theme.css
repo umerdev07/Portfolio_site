@@ -4,6 +4,7 @@
     --tertiary-color: #555;
     --icon: #fdfdfd;
     --card-border: black;
+    --hamburgerDropProjectMenu: white;
 }
 
 .dark-theme{
@@ -13,4 +14,5 @@
     --image-border: #fdfdfd;
     --icon: #969292;
     --card-border: rgb(255, 255, 255);
+    --hamburgerDropProjectMenu: black;
 }

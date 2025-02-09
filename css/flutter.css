@@ -11,6 +11,7 @@ body {
 
 .Icon{
     width: 30px;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -84,10 +85,10 @@ p a{
     transition: background-color 0.1s ease, color 0.3s ease;
 }
 
-.dropdown-content a:hover {
-    background-color: var(--secondary-color) !important;
-    color: var(--primary-color) !important;
-}
+    .dropdown-content a:hover {
+        background-color: var(--secondary-color) !important;
+        color: var(--primary-color) !important;
+    }
 
 .dropbtn {
     color: white;
@@ -287,7 +288,7 @@ h1{
     position: static;
     display: none;
     width: 100%;
-    background-color: white;
+    background-color: var(--hamburgerDropProjectMenu);
 }
 
 /* Open the dropdown inside the menu when clicking the "Projects" link */
