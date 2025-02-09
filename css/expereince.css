@@ -75,7 +75,7 @@ p a{
 }
 
 .dropdown-content a {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -84,7 +84,7 @@ p a{
 
 .dropdown-content a:hover {
     background-color: var(--secondary-color) !important;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .dropbtn {
