@@ -147,6 +147,7 @@ p a{
 }
 .about h4{
     font-size: 14px;    
+    color: var(--tertiary-color);
 }
 @keyframes fadeIn {
     to {
@@ -230,7 +231,7 @@ p a{
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 6px var(--secondary-color);
-    width: 30%;
+    width: 20%;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
@@ -261,7 +262,7 @@ p a{
 .skill img {
     width: 18px;
     height: 18px;
-    background-color: var(--primary-color);
+    filter: var(--icon-checked);
     margin-left: 10px;
 }
 

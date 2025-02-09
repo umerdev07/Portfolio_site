@@ -4,6 +4,7 @@
     --tertiary-color: #555;
     --icon: #fdfdfd;
     --card-border: black;
+    --icon-checked: invert(0%);
     --hamburgerDropProjectMenu: white;
 }
 
@@ -12,6 +13,7 @@
     --secondary-color: #fdfdfd;
     --tertiary-color: #969292; 
     --image-border: #fdfdfd;
+    --icon-checked: invert(100%);
     --icon: #969292;
     --card-border: rgb(255, 255, 255);
     --hamburgerDropProjectMenu: black;
